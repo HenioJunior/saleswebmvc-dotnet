@@ -9,8 +9,8 @@ using SalesWebMvc.Data;
 namespace SalesWebMvc.Migrations
 {
     [DbContext(typeof(SalesWebMvcContext))]
-    [Migration("20210212171829_OtherEntities")]
-    partial class OtherEntities
+    [Migration("20210212202253_Update")]
+    partial class Update
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -48,7 +48,7 @@ namespace SalesWebMvc.Migrations
 
                     b.HasIndex("SellerId");
 
-                    b.ToTable("SalesRecords");
+                    b.ToTable("SalesRecord");
                 });
 
             modelBuilder.Entity("SalesWebMvc.Models.Seller", b =>
